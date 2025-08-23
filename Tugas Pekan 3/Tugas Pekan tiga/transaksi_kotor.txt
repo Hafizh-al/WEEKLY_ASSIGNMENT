@@ -1,0 +1,5 @@
+ID001, sepatu lari , 2 , 750000
+ID002, tas sekolah, 1, 550000
+ID003,  baju renang,3,150000
+ID004, kacamata hitam, 2, 250000
+ID005,Topi, 1 ,125000

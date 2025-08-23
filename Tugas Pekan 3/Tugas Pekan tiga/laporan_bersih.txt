@@ -1,0 +1,10 @@
+LAPORAN TRANSAKSI BERSIH
+=========================
+
+ID001 | Sepatu Lari | 2 x 750000.0 = 1500000.0
+ID002 | Tas Sekolah | 1 x 550000.0 = 550000.0
+ID003 | Baju Renang | 3 x 150000.0 = 450000.0
+ID004 | Kacamata Hitam | 2 x 250000.0 = 500000.0
+ID005 | Topi | 1 x 125000.0 = 125000.0
+
+--- ANALISIS SELESAI ---
