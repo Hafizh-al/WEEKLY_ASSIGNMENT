@@ -38,7 +38,7 @@ for idx, item in enumerate(SURVEI, start=1):
     while True:
         jawaban = input("Jawaban Anda: ").strip()
         if jawaban in item["opsi"]:
-            print("--- Terima kasih! ---")
+            print("--- Jazakallah Khoiron! ---")
             hasil_polling[jawaban] += 1
             break
         else:
