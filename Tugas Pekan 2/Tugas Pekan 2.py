@@ -82,7 +82,7 @@ def tampilkan_struk(semua_nama, semua_harga, semua_jumlah, subtotal, total_disko
     total_bayar = subtotal - total_diskon
     print(f"Total yang harus dibayar: {format_rupiah(total_bayar)}")
     print("=" * 44)
-    print("      TERIMA KASIH TELAH BERBELANJA!")
+    print("TERIMA KASIH TELAH BERBELANJA!")
     print("=" * 44)
 
 def main():

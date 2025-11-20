@@ -1,0 +1,3 @@
+1,Teguh Khoir,85;92;81
+2,Yani Muslimah,89;88;91;100
+3,Muhammad Al Haqq,95;93;91;100
