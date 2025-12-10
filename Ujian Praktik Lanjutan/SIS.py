@@ -1,34 +1,34 @@
 nama_file = "database_siswa.txt"
 
-def mulai_data(nama_file):  # Fungsi untuk membaca data dari file
-    data = {} # Dictionary untuk menyimpan data siswa
+def mulai_data(nama_file):  
+    data = {} 
     try:     
-        with open(nama_file, "r", encoding="utf-8") as f:   # Buka file dalam mode baca 
-            for line in f:        # Baca setiap baris   
-                # Hilangkan spasi di awal/akhir baris
+        with open(nama_file, "r", encoding="utf-8") as f:   
+            for line in f:        
+                
                 line = line.strip()
                 if not line:     
-                    continue  # Lewati baris kosong
+                    continue  
                 
-                # Pisahkan bagian NIS, Nama, dan Nilai
-                parts = line.split(",", 2)  # Maksimal 3 bagian (karena nilai bisa kosong) 
-                nis = parts[0].strip()      # NIS selalu ada 
-                nama = parts[1].strip()     # Nama selalu ada
                 
-                # Pisahkan nilai yang dipisah tanda ";"
+                parts = line.split(",", 2)  
+                nis = parts[0].strip()      
+                nama = parts[1].strip()    
+                
+                
                 nilai_list = []   
                 if len(parts) == 3 and parts[2].strip() != "":
                     nilai_strs = parts[2].split(";")
                     for ns in nilai_strs:
                         nilai_list.append(int(ns))
                 
-                # Simpan ke dictionary
+                
                 data[nis] = {"nama": nama, "nilai": nilai_list}
     except FileNotFoundError:
         print("File database ga ditemukan, mulai dengan data kosong.")
     return data
 
-# Panggil fungsi dan tampilkan hasil 
+
 
 siswa_data = mulai_data(nama_file)
 print("Data siswa berhasil dibaca:")
@@ -137,7 +137,7 @@ def tambah_nilai_siswa(data_siswa):
         data_siswa[nis]["nilai"].append(nilai)
         print(f"Nilai {nilai} berhasil ditambahkan ke siswa dengan NIS {nis}.")
 
-# Main Program    
+ 
 
 def main():
     data_siswa = mulai_data(nama_file)
